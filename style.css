@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+}
+
+.buttons,
+.undo-redo-buttons {
+  margin: 20px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.progress-container {
+  height: 30px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 20px auto;
+  position: relative;
+}
+
+#progressBar {
+  height: 100%;
+  background-color: green;
+  width: 0;
+  transition: width 0.5s;
+}
